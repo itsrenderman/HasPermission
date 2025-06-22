@@ -18,7 +18,7 @@ type Permission = string | "RequireAll" | { Permission }
 local StringChecks: {
 	[string]: (Player, { string }) -> boolean,
 } = {
-	UserId = require(script.UserId),
+	["UserId"] = require(script:FindFirstChild("UserId"))
 }
 
 --[=[
@@ -41,8 +41,12 @@ function tableCheck(player: Player, permission: Permission): boolean
 	if requireAll then
 		table.remove(permission, requireAll)
 	end
+	
+	if #permission == 0 then
+		return true
+	end
 
-	local grantedPermissions = {}
+	local grantedPermissions: {Permission} = {}
 	for _, loop in permission do
 		if not HasPermission(player, loop) then
 			continue
