@@ -13,7 +13,7 @@
 	@within HasPermission
 	@type Permission string | "RequireAll" | {Permission}
 ]=]
-type Permission = string | "RequireAll" | { Permission }
+export type Permission = string | "RequireAll" | { Permission }
 
 local StringChecks: {
 	[string]: (Player, { string }) -> boolean,
