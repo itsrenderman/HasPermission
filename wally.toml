@@ -1,7 +1,8 @@
 [package]
-name = "itsrenderman/HasPermission"
+name = "itsrenderman/has-permission"
 version = "2.0.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+exclude = ["node_modules"]
 
 [dependencies]
