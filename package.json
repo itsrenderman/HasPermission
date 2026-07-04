@@ -1,6 +1,6 @@
 {
   "name": "haspermission",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "https://github.com/itsrenderman/HasPermission/releases",
   "scripts": {
     "docs:dev": "moonwave dev",
