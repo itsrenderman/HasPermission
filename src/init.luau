@@ -3,7 +3,6 @@
 --!optimize 2
 
 const LogService = game:GetService("LogService")
-const RunService = game:GetService("RunService")
 
 --[=[
 	@type Permission string | "RequireAll" | {Permission}
@@ -212,7 +211,7 @@ function HasPermission:Register(name: string, callback: Check): ()
 	assert(typeof(callback) == "function", `Expected argument 2 'Callback' to be a function, got '{typeof(callback)}'`)
 
 	HasPermission._Checks[name] = callback
-	if RunService:IsStudio() then
+	if HasPermission._Debug then
 		LogService:Warn(`Registered permission check '{name}'`)
 		LogService:Info(debug.traceback())
 	end
@@ -237,7 +236,7 @@ function HasPermission:Unregister(name: string): ()
 	end
 
 	HasPermission._Checks[name] = nil
-	if RunService:IsStudio() then
+	if HasPermission._Debug then
 		LogService:Warn(`Un-registered permission check '{name}'`)
 		LogService:Info(debug.traceback())
 	end
