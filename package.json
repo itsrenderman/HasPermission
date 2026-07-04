@@ -1,0 +1,24 @@
+{
+  "name": "haspermission",
+  "version": "2.0.0",
+  "description": "https://github.com/itsrenderman/HasPermission/releases",
+  "scripts": {
+    "docs:dev": "moonwave dev",
+    "debug": "rojo serve debug.project.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsrenderman/haspermission.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/itsrenderman/haspermission/issues"
+  },
+  "homepage": "https://github.com/itsrenderman/haspermission#readme",
+  "devDependencies": {
+    "moonwave": "^1.4.2"
+  }
+}
