@@ -12,8 +12,8 @@
 - `{&quot;UserId:1234&quot;, &quot;UserId:5678&quot;}`
 - `{&quot;!UserId:1234&quot;, &quot;!UserId:5678&quot;, &quot;RequireAll&quot;}`
 - `{{&quot;UserId:1&quot;, &quot;Name:Roblox&quot;, &quot;RequireAll&quot;}, {&quot;UserId:156&quot;, &quot;Name:builderman&quot;, &quot;RequireAll&quot;}, &quot;Admin&quot;}`"><link data-rh="true" rel="canonical" href="https://itsrenderman.github.io/HasPermission/api/HasPermission"><link data-rh="true" rel="alternate" href="https://itsrenderman.github.io/HasPermission/api/HasPermission" hreflang="en"><link data-rh="true" rel="alternate" href="https://itsrenderman.github.io/HasPermission/api/HasPermission" hreflang="x-default"><link rel="stylesheet" href="/HasPermission/assets/css/styles.e8e96400.css">
-<script src="/HasPermission/assets/js/runtime~main.8a697075.js" defer="defer"></script>
-<script src="/HasPermission/assets/js/main.744b51a6.js" defer="defer"></script>
+<script src="/HasPermission/assets/js/runtime~main.e6af4da3.js" defer="defer"></script>
+<script src="/HasPermission/assets/js/main.910777ca.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -27,13 +27,17 @@
   <li><code>{"!UserId:1234", "!UserId:5678", "RequireAll"}</code></li>
   <li><code>{{"UserId:1", "Name:Roblox", "RequireAll"}, {"UserId:156", "Name:builderman", "RequireAll"}, "Admin"}</code></li>
 </ul>
-</div></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions" translate="no">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Check"><code style="text-decoration:none">Check</code><a href="#Check" class="hash-link" aria-label="Direct link to Check" title="Direct link to Check" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L168"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Check</code><code>(</code><div class="inset_uKQm"><div><code>player<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/Player" target="_blank" rel="noopener noreferrer">Player<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+</div></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="types">Types<a href="#types" class="hash-link" aria-label="Direct link to Types" title="Direct link to Types" translate="no">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Permission"><code style="text-decoration:none">Permission</code><a href="#Permission" class="hash-link" aria-label="Direct link to Permission" title="Direct link to Permission" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L15"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>Permission<!-- --> = </code> <code class="blue_P4bS">string</code><code class="op_lSLc"> | </code><code class="blue_P4bS">&quot;RequireAll&quot;</code><code class="op_lSLc"> | </code><code class="purple_ieR2">{</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/HasPermission/api/HasPermission#Permission">Permission</a></code><code class="purple_ieR2">}</code></div><div>
+<p>The type definition for the 'Permission' callback parameter of <a href="/HasPermission/api/HasPermission#Check">HasPermission:Check</a></p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Check"><code style="text-decoration:none">Check</code><a href="#Check" class="hash-link" aria-label="Direct link to Check" title="Direct link to Check" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L24"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>Check<!-- --> = </code> <code class="purple_ieR2">(</code><div class="inset_uKQm"><code>player<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/Player" target="_blank" rel="noopener noreferrer">Player<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>args<!-- -->: </code><code class="green_DgR4">{</code><code class="blue_P4bS">string</code><code class="green_DgR4">}</code></div><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS">boolean</code></div><div>
+<p>The type definition for the 'Check' callback parameter of <a href="/HasPermission/api/HasPermission#Register">HasPermission:Register</a></p>
+</div><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions" translate="no">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Check"><code style="text-decoration:none">Check</code><a href="#Check" class="hash-link" aria-label="Direct link to Check" title="Direct link to Check" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L174"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Check</code><code>(</code><div class="inset_uKQm"><div><code>player<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/Player" target="_blank" rel="noopener noreferrer">Player<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>The player to check</p>
 </span></span></div><div><code>permission<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/HasPermission/api/HasPermission#Permission">Permission</a></code><span class="inlineDescription_G7Er">-- <span>
 <p>The permission to evaluate</p>
 </span></span></div></div><code>) → </code><code class="blue_P4bS">boolean</code><span class="inlineDescription_G7Er">-- <span>
 <p>Whether the player has the permission</p>
-</span></span></div><h3>Types</h3><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Permission"><a href="#Permission" class="hash-link" aria-label="Direct link to Permission" title="Direct link to Permission" translate="no">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>Permission<!-- --> = </code> <code class="blue_P4bS">string</code><code class="op_lSLc"> | </code><code class="blue_P4bS">&quot;RequireAll&quot;</code><code class="op_lSLc"> | </code><code class="purple_ieR2">{</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/HasPermission/api/HasPermission#Permission">Permission</a></code><code class="purple_ieR2">}</code></div><div></div><div>
+</span></span></div><div>
 <p>
   Checks if a player has a given permission. Delegates to either
   <code>tableCheck</code> or <code>stringCheck</code> based on the type of permission.
@@ -41,17 +45,22 @@
 <ul>
   <li>Use '!' before a check name to check if the permission is NOT granted.</li>
 </ul>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Exists"><code style="text-decoration:none">Exists</code><a href="#Exists" class="hash-link" aria-label="Direct link to Exists" title="Direct link to Exists" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L187"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Exists</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Name</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Exists"><code style="text-decoration:none">Exists</code><a href="#Exists" class="hash-link" aria-label="Direct link to Exists" title="Direct link to Exists" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L193"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Exists</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Name</code><span class="inlineDescription_G7Er">-- <span>
 <p>The name of the check</p>
 </span></span></div></div><code>) → </code><code class="blue_P4bS">boolean</code></div><div>
 <p>Returns true if a permission check</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Register"><code style="text-decoration:none">Register</code><a href="#Register" class="hash-link" aria-label="Direct link to Register" title="Direct link to Register" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L201"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Register</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Name</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Register"><code style="text-decoration:none">Register</code><a href="#Register" class="hash-link" aria-label="Direct link to Register" title="Direct link to Register" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L209"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Register</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Name</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>The name of the check</p>
-</span></span></div><div><code>callback<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/HasPermission/api/HasPermission#Check">Check</a></code></div></div><code>) → </code><code class="blue_P4bS">boolean</code><span class="inlineDescription_G7Er">-- <span>
+</span></span></div><div><code>callback<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/HasPermission/api/HasPermission#Check">Check</a></code><span class="inlineDescription_G7Er">-- <span>
+<p>The function to call for the permission check which should return a boolean</p>
+</span></span></div></div><code>) → </code><code class="blue_P4bS">boolean</code><span class="inlineDescription_G7Er">-- <span>
 <p>Whether the permission check has been registered</p>
-</span></span></div><h3>Types</h3><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Check"><a href="#Check" class="hash-link" aria-label="Direct link to Check" title="Direct link to Check" translate="no">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>Check<!-- --> = </code> <code class="purple_ieR2">(</code><div class="inset_uKQm"><code>player<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/Player" target="_blank" rel="noopener noreferrer">Player<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>args<!-- -->: </code><code class="green_DgR4">{</code><code class="blue_P4bS">string</code><code class="green_DgR4">}</code></div><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS">boolean</code></div><div></div><div>
-<p>Checks if a permission check has been registered.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Unregister"><code style="text-decoration:none">Unregister</code><a href="#Unregister" class="hash-link" aria-label="Direct link to Unregister" title="Direct link to Unregister" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L220"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Unregister</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Name</code><span class="inlineDescription_G7Er">-- <span>
+</span></span></div><div>
+<p>Registers a new permission check</p>
+<ul>
+  <li>Errors if a check with same name already exists</li>
+</ul>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Unregister"><code style="text-decoration:none">Unregister</code><a href="#Unregister" class="hash-link" aria-label="Direct link to Unregister" title="Direct link to Unregister" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L228"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Unregister</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Name</code><span class="inlineDescription_G7Er">-- <span>
 <p>The name of the check</p>
 </span></span></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Unregisters a permission check used against players.</p>
@@ -81,7 +90,7 @@
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 76,
+                &quot;line&quot;: 82,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -109,7 +118,7 @@
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 112,
+                &quot;line&quot;: 118,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -136,7 +145,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 168,
+                &quot;line&quot;: 174,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -158,13 +167,13 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 187,
+                &quot;line&quot;: 193,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
         {
             &quot;name&quot;: &quot;Register&quot;,
-            &quot;desc&quot;: &quot;Checks if a permission check has been registered.&quot;,
+            &quot;desc&quot;: &quot;Registers a new permission check\n- Errors if a check with same name already exists&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;name&quot;,
@@ -173,7 +182,7 @@
                 },
                 {
                     &quot;name&quot;: &quot;callback&quot;,
-                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;desc&quot;: &quot;The function to call for the permission check which should return a boolean&quot;,
                     &quot;lua_type&quot;: &quot;Check&quot;
                 }
             ],
@@ -185,7 +194,7 @@
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 201,
+                &quot;line&quot;: 209,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -202,7 +211,7 @@
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 220,
+                &quot;line&quot;: 228,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         }
@@ -214,7 +223,7 @@
             &quot;lua_type&quot;: &quot;boolean&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 36,
+                &quot;line&quot;: 42,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -224,7 +233,7 @@
             &quot;lua_type&quot;: &quot;number&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 43,
+                &quot;line&quot;: 49,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -234,7 +243,7 @@
             &quot;lua_type&quot;: &quot;number&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 50,
+                &quot;line&quot;: 56,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
@@ -244,7 +253,7 @@
             &quot;lua_type&quot;: &quot;{ [string]: Check }&quot;,
             &quot;private&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 57,
+                &quot;line&quot;: 63,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         }
@@ -252,19 +261,19 @@
     &quot;types&quot;: [
         {
             &quot;name&quot;: &quot;Permission&quot;,
-            &quot;desc&quot;: &quot;&quot;,
+            &quot;desc&quot;: &quot;The type definition for the &#x27;Permission&#x27; callback parameter of [HasPermission:Check]&quot;,
             &quot;lua_type&quot;: &quot;string | \&quot;RequireAll\&quot; | {Permission}&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 12,
+                &quot;line&quot;: 15,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         },
         {
             &quot;name&quot;: &quot;Check&quot;,
-            &quot;desc&quot;: &quot;&quot;,
+            &quot;desc&quot;: &quot;The type definition for the &#x27;Check&#x27; callback parameter of [HasPermission:Register]&quot;,
             &quot;lua_type&quot;: &quot;(player: Player, args: { string }) -&gt; boolean&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 18,
+                &quot;line&quot;: 24,
                 &quot;path&quot;: &quot;src/init.luau&quot;
             }
         }
@@ -272,7 +281,7 @@
     &quot;name&quot;: &quot;HasPermission&quot;,
     &quot;desc&quot;: &quot;Provides a way to check permissions for different users. Supports various checks, and allows for complex logic such as:\n- `\&quot;UserId:1234\&quot;`\n- `{\&quot;UserId:1234\&quot;, \&quot;UserId:5678\&quot;}`\n- `{\&quot;!UserId:1234\&quot;, \&quot;!UserId:5678\&quot;, \&quot;RequireAll\&quot;}`\n- `{{\&quot;UserId:1\&quot;, \&quot;Name:Roblox\&quot;, \&quot;RequireAll\&quot;}, {\&quot;UserId:156\&quot;, \&quot;Name:builderman\&quot;, \&quot;RequireAll\&quot;}, \&quot;Admin\&quot;}`&quot;,
     &quot;source&quot;: {
-        &quot;line&quot;: 29,
+        &quot;line&quot;: 35,
         &quot;path&quot;: &quot;src/init.luau&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#Check" class="table-of-contents__link toc-highlight">Check</a></li><li><a href="#Permission" class="table-of-contents__link toc-highlight">Permission</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#Check" class="table-of-contents__link toc-highlight">:Check</a></li><li><a href="#Exists" class="table-of-contents__link toc-highlight">:Exists</a></li><li><a href="#Register" class="table-of-contents__link toc-highlight">:Register</a></li><li><a href="#Unregister" class="table-of-contents__link toc-highlight">:Unregister</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 itsrenderman. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
