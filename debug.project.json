@@ -1,5 +1,5 @@
 {
-  "name": "HasPermission",
+  "name": "has-permission",
   "tree": {
     "$className": "DataModel",
     "$ignoreUnknownInstances": true,
