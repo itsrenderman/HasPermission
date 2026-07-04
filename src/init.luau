@@ -7,12 +7,18 @@ const RunService = game:GetService("RunService")
 
 --[=[
 	@type Permission string | "RequireAll" | {Permission}
+
+	The type definition for the 'Permission' callback parameter of [HasPermission:Check]
+
 	@within HasPermission
 ]=]
 type Permission = string | "RequireAll" | { Permission }
 
 --[=[
 	@type Check (player: Player, args: { string }) -> boolean
+
+	The type definition for the 'Check' callback parameter of [HasPermission:Register]
+
 	@within HasPermission
 ]=]
 type Check = (Player, { string }) -> boolean
@@ -190,9 +196,11 @@ function HasPermission:Exists(name: string): boolean
 end
 
 --[=[
-	Checks if a permission check has been registered.
+	Registers a new permission check
+	- Errors if a check with same name already exists
 
 	@param name Name -- The name of the check
+	@param callback Check -- The function to call for the permission check which should return a boolean
 	
 	@return boolean -- Whether the permission check has been registered
 
