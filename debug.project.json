@@ -1,0 +1,14 @@
+{
+  "name": "HasPermission",
+  "tree": {
+    "$className": "DataModel",
+    "$ignoreUnknownInstances": true,
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+
+      "HasPermission": {
+        "$path": "./src"
+      }
+    }
+  }
+}

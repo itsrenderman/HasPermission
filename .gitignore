@@ -1,0 +1,12 @@
+# npm
+node_modules/
+
+# Project place file
+/HasPermission.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Rojo
+sourcemap.json
