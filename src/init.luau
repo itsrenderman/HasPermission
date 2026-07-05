@@ -183,7 +183,7 @@ function HasPermission:Check(player: Player, permission: Permission): boolean
 end
 
 --[=[
-	Returns true if a permission check 
+	Returns true if a permission check has been registered with the specified name
 
 	@param name Name -- The name of the check
 
