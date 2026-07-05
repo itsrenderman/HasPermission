@@ -12,8 +12,8 @@
 - `{&quot;UserId:1234&quot;, &quot;UserId:5678&quot;}`
 - `{&quot;!UserId:1234&quot;, &quot;!UserId:5678&quot;, &quot;RequireAll&quot;}`
 - `{{&quot;UserId:1&quot;, &quot;Name:Roblox&quot;, &quot;RequireAll&quot;}, {&quot;UserId:156&quot;, &quot;Name:builderman&quot;, &quot;RequireAll&quot;}, &quot;Admin&quot;}`"><link data-rh="true" rel="canonical" href="https://itsrenderman.github.io/HasPermission/api/HasPermission"><link data-rh="true" rel="alternate" href="https://itsrenderman.github.io/HasPermission/api/HasPermission" hreflang="en"><link data-rh="true" rel="alternate" href="https://itsrenderman.github.io/HasPermission/api/HasPermission" hreflang="x-default"><link rel="stylesheet" href="/HasPermission/assets/css/styles.e8e96400.css">
-<script src="/HasPermission/assets/js/runtime~main.5be312d0.js" defer="defer"></script>
-<script src="/HasPermission/assets/js/main.143ed86c.js" defer="defer"></script>
+<script src="/HasPermission/assets/js/runtime~main.0429cc10.js" defer="defer"></script>
+<script src="/HasPermission/assets/js/main.33f5ed8a.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -48,7 +48,7 @@
 </div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Exists"><code style="text-decoration:none">Exists</code><a href="#Exists" class="hash-link" aria-label="Direct link to Exists" title="Direct link to Exists" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L192"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Exists</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Name</code><span class="inlineDescription_G7Er">-- <span>
 <p>The name of the check</p>
 </span></span></div></div><code>) → </code><code class="blue_P4bS">boolean</code></div><div>
-<p>Returns true if a permission check</p>
+<p>Returns true if a permission check has been registered with the specified name</p>
 </div><div class="divider_rE5g"></div><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="Register"><code style="text-decoration:none">Register</code><a href="#Register" class="hash-link" aria-label="Direct link to Register" title="Direct link to Register" translate="no">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/itsrenderman/HasPermission/blob/master/src/init.luau#L208"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>HasPermission<!-- -->:</code><code class="green_DgR4">Register</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Name</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>The name of the check</p>
 </span></span></div><div><code>callback<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/HasPermission/api/HasPermission#Check">Check</a></code><span class="inlineDescription_G7Er">-- <span>
@@ -151,7 +151,7 @@
         },
         {
             &quot;name&quot;: &quot;Exists&quot;,
-            &quot;desc&quot;: &quot;Returns true if a permission check &quot;,
+            &quot;desc&quot;: &quot;Returns true if a permission check has been registered with the specified name&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;name&quot;,
